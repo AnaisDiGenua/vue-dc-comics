@@ -59,7 +59,14 @@
             <!-- /footer center -->
 
             <!-- footer bottom -->
-            <div class="footer-bottom"></div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="sign-up">
+                    <button>Sign-up now!</button>
+                    </div>
+                    <div class="social-bar"></div>
+                </div>
+            </div>
             <!-- /footer bottom -->
     </footer>
 </template>
@@ -108,14 +115,14 @@ export default {
         height: 300px;
         background-image: url('../assets/img/footer-bg.jpg');
 
-                    .container {
-                        height: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        background-image: url('../assets/img/dc-logo-bg.png');
-                        background-repeat: no-repeat;
-                        background-position: right;
-                        background-size: 40%;
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-image: url('../assets/img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 40%;
                     }
     }
 
@@ -123,27 +130,46 @@ export default {
     .footer-center-content {
         display: flex;
 
-                        .col {
-                        margin-right: 30px;
+        .col {
+            margin-right: 30px;
 
-                            ul {
-                                list-style: none;
+            ul {
+                list-style: none;
 
-                                li {
+                li h3 {
+                    text-transform: uppercase;
+                    color: $white;
+                        }
 
-                                }
-                                    h3 {
-                                        text-transform: uppercase;
-                                        color: $white;
-                                    }
+                li a {
+                    color: $lightGray;
+                    text-decoration: none;
+                    font-size: .75rem;
+                        }
 
-                                    a {
-                                        color: $lightGray;
-                                        text-decoration: none;
-                                        font-size: .75rem;
-                                    }
+                }
+            }
+    }
+
+
+    .footer-bottom {
+        background-color: $darkGray;
+
+        .container {
+            display: flex;
+            padding: 20px 0;
+
+            .sign-up button {
+                background-color: $darkGray;
+                color: $white;
+                font-size: .9375rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 10px;
+                border: 2px solid $secondaryColor;
                             }
                     }
+
     }
 
 
