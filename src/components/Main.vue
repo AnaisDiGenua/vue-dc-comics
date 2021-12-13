@@ -1,9 +1,7 @@
 <template>
     <main>
         <div class="container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ea sit, nobis ipsa eum voluptatem eius totam doloribus corporis eaque natus obcaecati eos, reiciendis impedit quos iure in vitae earum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui odit veritatis eaque exercitationem eligendi a voluptate maxime voluptates aliquam excepturi ullam veniam, quo aut, aperiam eveniet magnam esse harum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quos architecto saepe dolorem. Possimus reiciendis consequatur molestias maxime ad harum ab optio! Ipsa tempora, eaque suscipit quod quisquam molestias consequuntur!
+            Content goes here
         </div>
     </main>
 </template>
@@ -14,6 +12,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang= "scss" scoped>
+@import '../assets/style/partials/variables.scss';
 
+    .container {
+        height: 100px; /*DEBUG*/
+        background: $black; /*DEBUG*/
+        color: $white; /*DEBUG*/
+    }
 </style>
