@@ -14,10 +14,11 @@ export default {
 
 <style lang= "scss" scoped>
 @import '../assets/style/partials/variables.scss';
-
-    .container {
+    main {
         height: 100px; /*DEBUG*/
         background: $black; /*DEBUG*/
+    }
+    .container {
         color: $white; /*DEBUG*/
     }
 </style>
