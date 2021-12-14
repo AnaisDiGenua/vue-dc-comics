@@ -6,8 +6,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Characters</a></li>
-                    <li><a href="" class="active">Comics</a></li>
+                    <li v-for="(link, index) in links" :key="index"><a :class="{active: link.current}" :href="link.url">{{link.text}}</a></li>
                 </ul>
             </nav>
         </div>
@@ -16,7 +15,64 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    data() {
+        return {
+            // array link nav
+            links: [
+                {
+                    text: "Characters",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Comics",
+                    url: "#",
+                    current: true
+                },
+                {
+                    text: "Movies",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Tv",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Games",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Collectibles",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Videos",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Fans",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "News",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Shop",
+                    url: "#",
+                    current: false
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -31,9 +87,10 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 0;
 
-                        .logo img {
-                            width: 80px;
+                .logo img {
+                    width: 80px;
                         }
             }
     }

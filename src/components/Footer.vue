@@ -43,7 +43,13 @@
                             <ul>
                                 <li><h3>dc</h3></li>
                                 <li><a href="">characters</a></li>
-
+                                <li><a href="">characters</a></li>
+                                <li><a href="">characters</a></li>
+                                <li><a href="">characters</a></li>
+                                <li><a href="">characters</a></li>
+                                <li><a href="">characters</a></li>
+                                <li><a href="">characters</a></li>
+                                <li><a href="">characters</a></li>
                             </ul>
                         </div>
                         <div class="col">
@@ -158,6 +164,7 @@ export default {
 
             ul {
                 list-style: none;
+                margin-bottom: 15px;
 
                 li h3 {
                     text-transform: uppercase;
@@ -168,7 +175,7 @@ export default {
                     color: $lightGray;
                     text-decoration: none;
                     font-size: .75rem;
-                        }
+                    }
 
                 }
             }
@@ -209,6 +216,7 @@ export default {
                 color: $secondaryColor;
             }
         }
+
         .social-bar ul {
             list-style: none;
             
@@ -221,7 +229,6 @@ export default {
                 }
             }
         }
-
     }
 
 
