@@ -5,15 +5,15 @@
                 <div class="container">
                     <ul>
                         <li>
-                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                            <img src="../../assets/img/buy-comics-digital-comics.png" alt="">
                             <a href="#">Digital comics</a>
                         </li>
                         <li>
-                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                            <img src="../../assets/img/buy-comics-digital-comics.png" alt="">
                             <a href="#">Digital comics</a>
                         </li>
                         <li>
-                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                            <img src="../../assets/img/buy-comics-digital-comics.png" alt="">
                             <a href="#">Digital comics</a>
                         </li>
                     </ul>
@@ -78,17 +78,17 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <img src="../assets/img/footer-facebook.png" alt="">
+                                        <img src="../../assets/img/footer-facebook.png" alt="">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../assets/img/footer-facebook.png" alt="">
+                                        <img src="../../assets/img/footer-facebook.png" alt="">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="../assets/img/footer-facebook.png" alt="">
+                                        <img src="../../assets/img/footer-facebook.png" alt="">
                                     </a>
                                 </li>
                             </ul>
@@ -107,7 +107,7 @@ export default {
 </script>
 
 <style lang = "scss" scoped>
-@import '../assets/style/partials/variables.scss';
+@import '../../assets/style/partials/variables.scss';
 
 
     .footer-top {
@@ -142,13 +142,13 @@ export default {
 
     .footer-center {
         height: 300px;
-        background-image: url('../assets/img/footer-bg.jpg');
+        background-image: url('../../assets/img/footer-bg.jpg');
 
         .container {
             height: 100%;
             display: flex;
             justify-content: space-between;
-            background-image: url('../assets/img/dc-logo-bg.png');
+            background-image: url('../../assets/img/dc-logo-bg.png');
             background-repeat: no-repeat;
             background-position: right;
             background-size: 40%;
@@ -167,14 +167,13 @@ export default {
                 margin-bottom: 15px;
 
                 li h3 {
-                    text-transform: uppercase;
-                    color: $white;
+                    font-size: 1.25rem;
                         }
 
                 li a {
+                    font-size: .8125rem;
                     color: $lightGray;
                     text-decoration: none;
-                    font-size: .75rem;
                     }
 
                 }
@@ -211,6 +210,7 @@ export default {
             margin-right: 20px;
 
             p {
+                font-size: 1.25rem;
                 text-transform: uppercase;
                 font-weight: 700;
                 color: $secondaryColor;

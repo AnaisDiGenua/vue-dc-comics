@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="../assets/img/dc-logo.png" alt="logo pagina dc">
+                <img src="../../assets/img/dc-logo.png" alt="logo pagina dc">
             </div>
             <nav>
                 <ul>
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang = "scss" scoped>
-@import '../assets/style/partials/variables.scss';
+@import '../../assets/style/partials/variables.scss';
 
     header {
         height: 100px;

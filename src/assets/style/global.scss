@@ -16,11 +16,18 @@ body {
 }
 
 
-
-
 /* CONTAINERS */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 0;
 }
+
+
+/* TYPO */
+h3 {
+    text-transform: uppercase;
+    color: $white;
+}
+
+
