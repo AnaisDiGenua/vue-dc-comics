@@ -1,9 +1,7 @@
 <template>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="../../assets/img/dc-logo.png" alt="logo pagina dc">
-            </div>
+            <Logo/>
             <nav>
                 <ul>
                     <li v-for="(link, index) in links" :key="index"><a :class="{active: link.current}" :href="link.url">{{link.text}}</a></li>
@@ -14,8 +12,13 @@
 </template>
 
 <script>
+import Logo from '../commons/Logo.vue';
+
 export default {
     name: 'Header',
+    components: {
+        Logo
+    },
     data() {
         return {
             // array link nav
@@ -88,10 +91,6 @@ export default {
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
-
-                .logo img {
-                    width: 80px;
-                        }
             }
     }
 

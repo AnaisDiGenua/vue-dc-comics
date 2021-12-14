@@ -20,7 +20,7 @@ export default {
         margin: 20px;
 
         h3 {
-            font-size: .875rem;
+            font-size: .9375rem;
             font-weight: 400;
             margin-top: 10px;
         }

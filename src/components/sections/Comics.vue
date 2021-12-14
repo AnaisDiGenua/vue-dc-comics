@@ -112,6 +112,8 @@ export default {
         text-transform: uppercase;
         padding: 5px 20px;
         color: $white;
+        position: relative;
+        bottom: 60px;
     }
 
     .load-more-btn {
