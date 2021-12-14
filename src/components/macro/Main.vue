@@ -1,5 +1,6 @@
 <template>
     <main>
+        <Hero/>
         <div class="container">
             <Comics/>
         </div>
@@ -8,11 +9,13 @@
 
 <script>
 import Comics from '../sections/Comics.vue';
+import Hero from '../sections/Hero.vue';
 
 export default {
     name: 'Main',
     components: {
-        Comics
+        Comics,
+        Hero
     }
 }
 </script>

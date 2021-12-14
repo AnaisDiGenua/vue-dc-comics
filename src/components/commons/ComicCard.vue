@@ -22,6 +22,7 @@ export default {
         h3 {
             font-size: .875rem;
             font-weight: 400;
+            margin-top: 10px;
         }
 
         img {
