@@ -106,6 +106,7 @@ export default {
                     font-weight: 700;
                     padding: 34px 15px;
                     color: $darkGray;
+                    transition: 0.2s ease-out;
 
                     &.active, &:hover {
                         color: $secondaryColor;

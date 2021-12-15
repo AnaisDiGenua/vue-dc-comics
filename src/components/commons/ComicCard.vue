@@ -18,7 +18,7 @@ export default {
     .comic {
 
         h3 {
-            font-size: .9375rem;
+            font-size: 16px;
             font-weight: 400;
             margin-top: 10px;
         }

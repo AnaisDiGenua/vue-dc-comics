@@ -29,7 +29,7 @@ export default {
             a {
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: .75rem;
+                font-size: .9375rem;
                 color: $white;
                 margin-left: 10px;
                 }
