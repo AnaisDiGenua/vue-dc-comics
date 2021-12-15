@@ -4,7 +4,7 @@
             <div class="footer-top">
                 <div class="container">
                     <ul>
-                        <Shop v-for="(shopLink,index) in shopLinks" :shop-link="shopLink" :key="index"/>
+                        <ShopLinks v-for="(shopLink,index) in shopLinks" :shop-link="shopLink" :key="index"/>
                     </ul>
                 </div>
             </div>
@@ -19,23 +19,40 @@
             <!-- /footer center -->
 
             <!-- footer bottom -->
-            <SocialBar/>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="sign-up-cta">
+                        <button>Sign-up now!</button>
+                    </div>
+
+                    <div class="social-box">
+                        <div class="follow-us-cta">
+                            <p>Follow us</p>
+                        </div>
+                        <div class="social-list">
+                            <ul>
+                                <SocialLinks v-for="(socialLink,index) in socialLinks" :social-link="socialLink" :key="index"/>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- /footer bottom -->
     </footer>
 </template>
 
 
 <script>
-import Shop from '../sections/Shop.vue';
+import ShopLinks from '../sections/ShopLinks.vue';
 import FooterLinks from '../sections/FooterLinks.vue';
-import SocialBar from '../sections/SocialBar.vue';
+import SocialLinks from '../sections/SocialLinks.vue';
 
 export default {
     name: 'Footer',
     components: {
-        Shop,
+        ShopLinks,
         FooterLinks,
-        SocialBar
+        SocialLinks
     },
     data() {
         return {
@@ -60,6 +77,28 @@ export default {
                 {
                     "src": require("../../assets/img/buy-dc-power-visa.svg"),
                     "name": "dc power visa"
+                },
+            ],
+            socialLinks: [
+                {
+                    "src": require("../../assets/img/footer-facebook.png"),
+                    "name": "facebook link"
+                },
+                {
+                    "src": require("../../assets/img/footer-twitter.png"),
+                    "name": "twitter link"
+                },
+                {
+                    "src": require("../../assets/img/footer-youtube.png"),
+                    "name": "youtube link"
+                },
+                {
+                    "src": require("../../assets/img/footer-pinterest.png"),
+                    "name": "pinterest link"
+                },
+                {
+                    "src": require("../../assets/img/footer-periscope.png"),
+                    "name": "periscope link"
                 },
             ]
         }
@@ -95,6 +134,47 @@ export default {
             background-position: right;
             background-size: 40%;
                     }
+    }
+
+    .footer-bottom {
+        background-color: $darkGray;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+
+            .sign-up-cta button {
+                background-color: $darkGray;
+                color: $white;
+                font-size: .9375rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 10px;
+                border: 2px solid $secondaryColor;
+                            }
+                    }
+    }
+
+    .social-box {
+        display: flex;
+        align-items: center;
+
+        .follow-us-cta {
+            margin-right: 20px;
+
+            p {
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $secondaryColor;
+            }
+        }
+
+        .social-list ul {
+            list-style: none;
+        }
     }
 
 

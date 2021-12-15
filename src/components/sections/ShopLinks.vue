@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: "Shop",
+    name: "ShopLinks",
     props: {
         shopLink: Object
     }
