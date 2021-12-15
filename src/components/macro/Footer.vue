@@ -11,7 +11,11 @@
             <!-- /footer top -->
 
             <!-- footer center -->
-            <FooterLinks/>
+            <div class="footer-center">
+                <div class="container">
+                    <FooterLinks/>
+                </div>
+            </div>
             <!-- /footer center -->
 
             <!-- footer bottom -->
@@ -19,6 +23,7 @@
             <!-- /footer bottom -->
     </footer>
 </template>
+
 
 <script>
 import Shop from '../sections/Shop.vue';
@@ -62,6 +67,7 @@ export default {
 }
 </script>
 
+
 <style lang = "scss" scoped>
 @import '../../assets/style/partials/variables.scss';
 
@@ -75,6 +81,20 @@ export default {
             align-items: center;
             list-style: none;
         }
+    }
+
+    .footer-center {
+        background-image: url('../../assets/img/footer-bg.jpg');
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-image: url('../../assets/img/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 40%;
+                    }
     }
 
 
