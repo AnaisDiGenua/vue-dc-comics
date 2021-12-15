@@ -20,10 +20,10 @@ export default {
     li {
         display: flex;
         align-items: center;
-        margin: 0 20px;
 
         img {
             width: 35px;
+            cursor: pointer;
             }
 
             a {

@@ -4,7 +4,7 @@
             <Logo/>
             <nav>
                 <ul>
-                    <li v-for="(link, index) in links" :key="index"><a :class="{active: link.current}" :href="link.url">{{link.text}}</a></li>
+                    <li v-for="(link, index) in links" :key="index" @click="selectLink(index)"><a :class="currentLink == index ? 'active' : '' " :href="link.url">{{link.text}}</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,54 +26,50 @@ export default {
                 {
                     text: "Characters",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "Comics",
                     url: "#",
-                    current: true
                 },
                 {
                     text: "Movies",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "Tv",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "Games",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "Collectibles",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "Videos",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "Fans",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "News",
                     url: "#",
-                    current: false
                 },
                 {
                     text: "Shop",
                     url: "#",
-                    current: false
                 }
-            ]
+            ],
+            currentLink: 0
+        }
+    },
+    methods: {
+        selectLink(index) {
+            this.currentLink = index;
         }
     }
 }
@@ -108,11 +104,12 @@ export default {
                     text-decoration: none;
                     text-transform: uppercase;
                     font-weight: 700;
-                    padding: 0 15px;
+                    padding: 34px 15px;
                     color: $darkGray;
 
                     &.active, &:hover {
                         color: $secondaryColor;
+                        border-bottom: 5px solid $secondaryColor;
                     }
                 }
             }

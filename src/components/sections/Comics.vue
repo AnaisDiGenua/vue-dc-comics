@@ -108,6 +108,7 @@ export default {
         >* {
             width: calc(100% / 6 - 40px); 
             margin: 20px;
+            cursor: pointer;
         }
     }
 
@@ -132,6 +133,7 @@ export default {
             color: $white;
             border: none;
             padding: 10px 40px;
+            cursor: pointer;
         }
     }
 </style>

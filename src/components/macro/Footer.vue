@@ -116,7 +116,7 @@ export default {
         ul {
             height: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             list-style: none;
         }
@@ -153,8 +153,9 @@ export default {
                 text-transform: uppercase;
                 padding: 10px;
                 border: 2px solid $secondaryColor;
-                            }
-                    }
+                cursor: pointer;
+            }
+        }
     }
 
     .social-box {

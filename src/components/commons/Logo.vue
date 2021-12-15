@@ -13,5 +13,6 @@ export default {
 <style lang = "scss" scoped>
     .logo img {
         width: 80px;
+        cursor: pointer;
     }
 </style>
