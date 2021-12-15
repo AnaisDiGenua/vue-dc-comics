@@ -16,8 +16,6 @@ export default {
 
 <style lang = "scss" scoped>
     .comic {
-        width: calc(100% / 6 - 40px); /*DEBUG*/
-        margin: 20px;
 
         h3 {
             font-size: .9375rem;

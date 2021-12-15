@@ -104,6 +104,11 @@ export default {
     .comics-list {
         display: flex;
         flex-wrap: wrap;
+
+        >* {
+            width: calc(100% / 6 - 40px); 
+            margin: 20px;
+        }
     }
 
     h2 {
